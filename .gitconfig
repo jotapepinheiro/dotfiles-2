@@ -1,0 +1,6 @@
+[push]
+	default = simple
+	followTags = true
+[user]
+	email = contato@ulissesms.com.br
+	name = Ulisses Marcondes
