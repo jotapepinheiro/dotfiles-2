@@ -1,15 +1,13 @@
 #!/zsh
-echo "Installing NVM"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
-
 echo "Installing node"
-nvm install 12.7.0 && nvm alias default 12.7.0
+brew install node@10
+# echo 'export PATH="/usr/local/opt/node@10/bin:$PATH"' >> ~/.zshrc
 
 echo "Installing watchman"
 brew install watchman
 
 echo "Installing yarn"
-brew install yarn
+brew install yarn --ignore-dependencies
 
 echo "Installing React Native CLI"
 yarn global add react-native-cli

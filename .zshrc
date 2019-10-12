@@ -116,14 +116,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# NODE COM HOMEBREW
+export PATH="/usr/local/opt/node@10/bin:$PATH"
 
-alias work='cd ~/local/work/development/'
-alias personal='cd ~/local/personal/'
-
-# ALIAS DO PYTHON 3
-alias python=python3
-
-alias pip=pip3
+# -------
+# Aliases
+# -------
+source ~/.bash_aliases

@@ -5,6 +5,7 @@ ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.vim ~/.vim
 ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/.zshrc ~/.zshrc
+ln -s $(pwd)/.bash_aliases ~/.bash_aliases
 ln -s $(pwd)/.tmux.conf ~/.tmux.conf
 
 # BINARIES
@@ -28,6 +29,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 echo "Simlink spaceship"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 cp .zshrc ~/.zshrc
+cp .bash_aliases ~/.bash_aliases
 
 echo "Ambiente configurado. Agora vamos instalar os apps "
 
